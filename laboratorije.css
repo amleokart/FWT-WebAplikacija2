@@ -1,0 +1,283 @@
+html {
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url("https://www.solidbackgrounds.com/images/950x350/950x350-white-solid-color-background.jpg");
+    background-repeat: repeat;
+    background-size: 90%;
+    width: auto;
+    display: grid;
+    grid-template-areas: "header header header" "nav article ads" "footer footer footer";
+    grid-template-rows: 80px 1fr 70px;
+    grid-template-columns: 50%;
+    grid-row-gap: 15px;
+    grid-column-gap: 0;
+    margin: 0;
+}
+
+#zaglavlje {
+    grid-area: header;
+}
+
+#podnozje {
+    grid-area: footer;
+}
+
+#slika {
+    grid-area: article;
+}
+
+#lista {
+    grid-area: nav;
+}
+
+#siteAds {
+    grid-area: ads;
+}
+
+#zaglavlje{
+    background-color: rgb(28, 28, 236);
+}
+
+#zaglavlje img {
+    margin-left: 40px;
+    float: left;
+    width: 150%;
+    max-width: 180px;
+    height: auto;
+}
+
+#zaglavlje h1 {
+    margin: 35px;
+    text-align: left;
+    margin-right: 50px;
+    color: white;
+}
+
+.lista ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: white;
+    background-color: rgb(28, 28, 236);
+    list-style: none;
+}
+
+.listaaaaa ul {
+    color: white;
+    list-style: none;
+    background-color: rgb(28, 28, 236);
+}
+
+.tekst {
+    margin-left: 20px;
+}
+
+#pdonz {
+    display: inline-flex;
+}
+
+#prva {
+    margin-bottom: 30px;
+    margin-right: 100px;
+}
+
+#druga {
+    margin-right: 60px;
+}
+
+#treca {
+    margin-left: 80px;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    color: black;
+  }
+
+.lista ul li {
+    float: right;
+    padding: 10px;
+}
+.lista ul li a {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.lista ul li a:hover {
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+}
+
+#slika img {
+    width: 95%;
+    height: auto;
+    margin-top: 120px;
+}
+
+#podnozje {
+    /*margin-top: 20px;*/
+    text-align: center;
+    color: black;
+    background-color: rgb(28, 28, 236);
+    font-size: 15pt;
+}
+
+
+@media all and (max-width: 575px) {
+    body {
+        grid-template-areas: "header" "article" "ads" "nav" "footer";
+        grid-template-rows: 150px 1fr 1fr 1fr 70px;
+        grid-template-columns: 1fr;
+    }
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 90%;
+    margin: 0 auto;
+    -ms-grid-row-span: 10px;
+    border: 1px solid rgb(28, 28, 236);
+    margin-top: 100px;
+}
+
+#prva-kutija {
+    margin-left: 45%;
+}
+
+#sve-kutije {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  .wrapper .sos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .wrapper .go {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .with-padd {
+      padding: 20px 0;
+  }
+  .bott-padd {
+    padding-bottom: 10px;
+}
+
+  .wrapper .go .lista {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+
+.oprema {
+    margin-left: 35px;
+} 
+
+  .slika1 {
+    background: url("/img/slika1.jpg") no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: auto;
+  }
+
+  .slika2 {
+    background: url("/img/slika2.jpg") no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: auto;
+    float: right;
+  }
+
+  .slika3 {
+    background: url("/img/slika3.jpg") no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: auto;
+  }
+
+  .slika4 {
+    background: url("/img/slika4.jpg") no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: auto;
+  }
+
+  .slika5 {
+    background: url("/img/slika5.jpg") no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: auto;
+  }
+
+  .slika6 {
+    background: url("/img/slika6.png") no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: auto;
+  }
+
+  .oprema ul {
+    list-style: none;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .col-md-4{
+    columns: md -4px;
+  }
+
+  .col-sm-4{
+    columns: sm -4px;
+  }
+
+  .col-sm-8{
+    columns: sm -8px;
+  }
+
+  .offset-sm-4{
+    offset: sm -4;
+  }
+
+  .offset-md-0{
+    offset: md 0;
+  }
+
+  .col-sm-12{
+    columns: sm -12px;
+  }
+
+  .col-md-12{
+    columns: md -12px;
+  }
+
+  .col-sm-6{
+    columns: sm -6px;
+  }
+
+  .col-md-6{
+    columns: md -6px;
+  }
+

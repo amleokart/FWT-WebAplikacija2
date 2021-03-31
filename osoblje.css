@@ -1,0 +1,243 @@
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url("https://www.solidbackgrounds.com/images/950x350/950x350-white-solid-color-background.jpg");
+  background-repeat: repeat;
+  background-size: 90%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 80px 50px 1fr 50px 1fr 70px;
+  grid-gap: 20px;
+  height: 100vh;
+  margin: 0;
+}
+#zaglavlje{
+  background-color: rgb(70, 70, 230);
+}
+
+
+#zaglavlje img {
+  margin-left: 40px;
+  float: left;
+  width: 150%;
+  max-width: 180px;
+  height: auto;
+}
+
+#zaglavlje h1 {
+  margin: 35px;
+  text-align: left;
+  margin-right: 50px;
+  color: white;
+}
+
+.lista ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: white;
+  background-color: rgb(70, 70, 230);
+  list-style: none;
+}
+
+#pdonz {
+  display: inline-flex;
+}
+
+#prva {
+  margin-bottom: 30px;
+  margin-right: 100px;
+}
+
+#druga {
+  margin-right: 60px;
+}
+
+#treca {
+  margin-left: 80px;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  color: black;
+}
+
+.lista ul li {
+  float: right;
+  padding: 10px;
+}
+.lista ul li a {
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.lista ul li a:hover {
+  background-color: black;
+}
+
+h1 {
+  text-align: center;
+}
+
+#slika img {
+  width: 95%;
+  height: auto;
+  margin-top: 120px;
+}
+
+#podnozje {
+  margin-top: 20px;
+  text-align: center;
+  color: black;
+  background-color: rgb(70, 70, 230);
+}
+
+
+#leftList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+#rightList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 blue;
+  transition: 0.3s;
+  width: 40%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.card1 {
+  box-shadow: 0 4px 8px 0 blue;
+  background-color: rgb(148, 186, 236);
+  transition: 0.3s;
+  width: 80%;
+  margin: 0 auto; 
+  padding: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card1:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.img1 {
+  background: url('img/slika7.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+      width: 108px;
+  height: 192px;
+  margin: 0 auto;
+}
+
+.img2 {
+  background: url('img/slika8.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+      width: 108px;
+  height: 192px;
+  margin: 0 auto;
+}
+
+.img3 {
+  background: url('img/slika9.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+      width: 108px;
+  height: 192px;
+  margin: 0 auto;
+}
+
+.img4 {
+  background: url('img/slika10.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+      width: 108px;
+  height: 192px;
+  margin: 0 auto;
+}
+
+.img5 {
+  background: url('img/slika11.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+      width: 108px;
+  height: 192px;
+  margin: 0 auto;
+}
+
+.img12 {
+  background: url('img/slika12.jpeg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+      width: 108px;
+  height: 192px;
+  margin: 0 auto;
+}
+
+.img13 {
+  background: url('img/slika13.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+      width: 108px;
+  height: 192px;
+  margin: 0 auto;
+}
+
+.img15 {
+  background: url('img/slika15.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+      width: 108px;
+  height: 192px;
+  margin: 0 auto;
+}
+
+.img16 {
+  background: url('img/slika16.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+      width: 108px;
+  height: 192px;
+  margin: 0 auto;
+}
+.img17 {
+  background: url('img/slika17.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+      width: 108px;
+  height: 192px;
+  margin: 0 auto;
+}
+.img18 {
+  background: url('img/slika18.jpg') no-repeat;
+  background-size: cover;
+      width: 108px;
+  height: 192px; 
+  margin: 0 auto;
+}

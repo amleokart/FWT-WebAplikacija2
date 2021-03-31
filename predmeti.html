@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <title> Zadatak 6 </title>
+        <link rel="stylesheet" type="text/css" href="predmeti.css" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="skripta.js"></script>  
+    </head>
+
+    <body>
+        <header id="zaglavlje">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRswdKqhSN1EOOTIXDn4hy9N0YOiWnUuQcGfISUlaCL0upyQQ1Y" alt="slika"/>
+                <h1> RAZVOJ SOFTVERA </h1>            
+                <nav class="lista">
+                <ul>
+                    <li> <a href="/pocetna.html"> Početna </a></li>
+                    <li> <a href="/kontakt.html"> Kontakt </a></li>
+                    <li> <a href="/godine.html"> Godine </a></li>
+                    <li> <a href="/osoblje.html"> Osoblje </a></li>
+                    <li> <a href="/laboratorije.html"> Laboratorije </a></li>
+                    <li> <a href="/predmeti.html"> Predmeti </a></li>
+                </ul>
+            </nav>
+        </header>
+      
+        <div class="tabele" style="margin-bottom: 15%;">
+            <div class="dugmad">
+                <button onclick="sortiraj()" style="background-color: blue; color: white; font-size: 16pt;">Sortiraj</button>
+                <button onclick="prvaGodina()" style="background-color: blue; color: white; font-size: 16pt;">Prva godina</button>
+                <button onclick="drugaGodina()" style="background-color: blue; color: white; font-size: 16pt;">Druga godina</button>
+                <button onclick="sviPredmeti()" style="background-color: blue; color: white; font-size: 16pt;">Svi predmeti</button>
+             </div>
+
+             <div class="prva-tabela predmet prva-godina svi-predmeti" id="mur2" style="background-color: rgb(148, 186, 236); margin-left: 500px; width: 250%; font-size: 15pt;">
+                <div class="div1" style="background-color: blue; color: white; margin-top: 50px;">
+                    <br>
+                    <b><i> NASLOV PREDMETA </i></b> </div>
+                <div class="div2" style="background-color: blue; color: white; margin-top: 50px;">
+                    <br>
+                    <b><i> OPIS </i></b></div>
+                <div class="div3" style="background-color: blue; color: white; margin-top: 50px;">
+                    <br>
+                    <b><i> LISTA TEMA </i></b></div>
+                <div class="div4" style="background-color: blue; color: white; margin-top: 50px;">
+                    <br>
+                    <b><i> PREDAVANJA </i></b></div>
+                <div class="div5" style="background-color: blue; color: white; margin-top: 50px;">
+                    <br>
+                    <b><i> LABORATORIJSKE VJEŽBE </i></b></div>
+                <div class="div6" style="background-color: blue; color: white; margin-top: 50px;">
+                    <br>
+                    <b><i> TUTORIJALI </i></b></div>
+                <div class="div7" style="background-color: blue; color: white; margin-top: 50px;">
+                    <br>
+                    <b><i> PROFESORI </i></b></div>
+                <div class="div8" style="background-color: blue; color: white; margin-top: 50px;">
+                    <br>
+                    <b><i> ASISTENTI </i></b></div>
+                <div class="div11" style="margin-top: 70px; margin-left: 20px;"><b> MATEMATIKA U RAČUNARSTVU 2 </b></div>
+                <div class="div12" style="margin-top: 50px; margin-left: 20px;"> Predmet je zamišljen tako da studenti nakon njega posjeduju: sposobnost identifikacije problema iz oblasti računarskih nauka koje se oslanjaju na matematski aparat linearne algebre i matematičke analize, Sposobnost analize i rješavanja jednostavnijih problema iz gore navedenih oblasti, nakon uspješne identifikacije, sposobnost procjene kvaliteta rješenja problema iz gore navedenih oblasti i njihove generalizacije. </div>
+                <div class="div13" style="margin-top: 50px; margin-left: 20px;"> Vektori i matrice, Sistemi linearnih jednačina, Analitička geometrija u ravni, Osnovni brojevni skupovi, Elemenatrne funkcije, Granični procesi, Diferencijalni račun funkcija jedne promjenjljive, Integralni račun funkcija jedne promjenjljive </div>
+                <div class="div14" style="margin-top: 70px; margin-left: 20px;"> 52 </div>
+                <div class="div15" style="margin-top: 70px; margin-left: 20px;"> 0 </div>
+                <div class="div16" style="margin-top: 70px; margin-left: 20px;"> 28 </div>
+                <div class="div17" style="margin-top: 70px; margin-left: 20px;">
+                    <ul class="lista-profesora"> 
+                        <li> R. prof. dr Fatih Destović, dipl.mat. </li>
+                    </ul>
+                </div>
+                <div class="div18" style="margin-top: 70px; margin-left: 20px;">
+                    <ul class="lista-asistenata"> 
+                        <li> Amar Bašić </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="prva-tabela predmet svi-predmeti" id="icr" style="background-color: rgb(148, 186, 236); margin-left: 500px; width: 250%; font-size: 15pt;">
+                    <div class="div1" style="background-color: blue; color: white; margin-top: 50px;">
+                        <br>
+                        <b><i> NASLOV PREDMETA </i></b> </div>
+                    <div class="div2" style="background-color: blue; color: white; margin-top: 50px;">
+                        <br>
+                        <b><i> OPIS </i></b></div>
+                    <div class="div3" style="background-color: blue; color: white; margin-top: 50px;">
+                        <br>
+                        <b><i> LISTA TEMA </i></b></div>
+                    <div class="div4" style="background-color: blue; color: white; margin-top: 50px;">
+                        <br>
+                        <b><i> PREDAVANJA </i></b></div>
+                    <div class="div5" style="background-color: blue; color: white; margin-top: 50px;">
+                        <br>
+                        <b><i> LABORATORIJSKE VJEŽBE </i></b></div>
+                    <div class="div6" style="background-color: blue; color: white; margin-top: 50px;">
+                        <br>
+                        <b><i> TUTORIJALI </i></b></div>
+                    <div class="div7" style="background-color: blue; color: white; margin-top: 50px;">
+                        <br>
+                        <b><i> PROFESORI </i></b></div>
+                    <div class="div8" style="background-color: blue; color: white; margin-top: 50px;">
+                        <br>
+                        <b><i> ASISTENTI </i></b></div>
+                    <div class="div11" style="margin-top: 70px; margin-left: 20px;"><b> INTERAKCIJA ČOVJEK-RAČUNAR </b></div>
+                    <div class="div12" style="margin-top: 60px; margin-left: 20px;"> Projektovanje i implementacija interfejsa čovjek-mašina </div>
+                    <div class="div13" style="margin-top: 50px; margin-left: 20px;"> Interakcija čovjek-računar: definicija, značenje, osnovni pojmovi, Razumijevanje i analiza korisnika, promišljanje dizajna, Projektovanje interakcije, Prototip, Primjeri dobrog projektovanja inetrakcije, Tehnike vizualizacije, Evaluacija upotrebljivosti, značaj, principi, metode </div>
+                    <div class="div14" style="margin-top: 70px; margin-left: 20px;"> 36 </div>
+                    <div class="div15" style="margin-top: 70px; margin-left: 20px;"> 30 </div>
+                    <div class="div16" style="margin-top: 70px; margin-left: 20px;"> 0 </div>
+                    <div class="div17" style="margin-top: 70px; margin-left: 20px;">
+                        <ul class="lista-profesora"> 
+                            <li> Vanr.prof dr Dušanka Bošković </li>
+                        </ul>
+                    </div>
+                    <div class="div18" style="margin-top: 50px; margin-left: 20px;">
+                        <ul class="lista-asistenata"> 
+                            <li> dr Nihad Borovina </li>
+                        </ul>
+                    </div>
+                </div>
+
+        <div class="prva-tabela predmet prva-godina svi-predmeti" id="obp" style="background-color: rgb(148, 186, 236); margin-left: 500px; width: 250%; font-size: 15pt;">
+                <div class="div1" style="background-color: blue; color: white; margin-top: 50px;">
+                    <br>
+                    <b><i> NASLOV PREDMETA </i></b> </div>
+                <div class="div2" style="background-color: blue; color: white; margin-top: 50px;">
+                    <br>
+                    <b><i> OPIS </i></b></div>
+                <div class="div3" style="background-color: blue; color: white; margin-top: 50px;">
+                    <br>
+                    <b><i> LISTA TEMA </i></b></div>
+                <div class="div4" style="background-color: blue; color: white; margin-top: 50px;">
+                    <br>
+                    <b><i> PREDAVANJA </i></b></div>
+                <div class="div5" style="background-color: blue; color: white; margin-top: 50px;">
+                    <br>
+                    <b><i> LABORATORIJSKE VJEŽBE </i></b></div>
+                <div class="div6" style="background-color: blue; color: white; margin-top: 50px;">
+                    <br>
+                    <b><i> TUTORIJALI </i></b></div>
+                <div class="div7" style="background-color: blue; color: white; margin-top: 50px;">
+                    <br>
+                    <b><i> PROFESORI </i></b></div>
+                <div class="div8" style="background-color: blue; color: white; margin-top: 50px;">
+                    <br>
+                    <b><i> ASISTENTI </i></b></div>
+                <div class="div11" style="margin-top: 70px; margin-left: 20px;"><b> OSNOVE BAZA PODATAKA </b></div>
+                <div class="div12" style="margin-top: 60px; margin-left: 20px;"> Predmet je zamišljen tako da se steknu znanja o: osnovnim koceptima baza podataka, relacijskom modelu i arhitekturi sistema baza podataka, osnovama SQL jezika, pravilima za definisanje šeme</div>
+                <div class="div13" style="margin-top: 70px; margin-left: 20px;"> Uvod u baze podataka, Arhitektura sistema baza podataka, Tipovi, Relacijski model podataka, Relacije, Integritet, Uvod u SQL, Pogledi, Funkcionalne zavisnosti i normalizacija  </div>
+                <div class="div14" style="margin-top: 70px; margin-left: 20px;"> 40 </div>
+                <div class="div15" style="margin-top: 70px; margin-left: 20px;"> 20 </div>
+                <div class="div16" style="margin-top: 70px; margin-left: 20px;"> 0 </div>
+                <div class="div17" style="margin-top: 70px; margin-left: 20px;">
+                    <ul class="lista-profesora"> 
+                        <li> Doc. Dr. Emir Buza </li>
+                    </ul>
+                </div>
+                <div class="div18" style="margin-top: 50px; margin-left: 20px;">
+                    <ul class="lista-asistenata"> 
+                        <li> Emir Cogo, MoEE </li>
+                    </ul>
+                </div>
+            </div>
+
+            
+        <div class="prva-tabela predmet prva-godina svi-predmeti" id="rp" style="background-color: rgb(148, 186, 236); margin-left: 500px; width: 250%; font-size: 15pt;">
+                <div class="div1" style="background-color: blue; color: white; margin-top: 50px;">
+                    <br>
+                    <b><i> NASLOV PREDMETA </i></b> </div>
+                <div class="div2" style="background-color: blue; color: white; margin-top: 50px;">
+                    <br>
+                    <b><i> OPIS </i></b></div>
+                <div class="div3" style="background-color: blue; color: white; margin-top: 50px;">
+                    <br>
+                    <b><i> LISTA TEMA </i></b></div>
+                <div class="div4" style="background-color: blue; color: white; margin-top: 50px;">
+                    <br>
+                    <b><i> PREDAVANJA </i></b></div>
+                <div class="div5" style="background-color: blue; color: white; margin-top: 50px;">
+                    <br>
+                    <b><i> LABORATORIJSKE VJEŽBE </i></b></div>
+                <div class="div6" style="background-color: blue; color: white; margin-top: 50px;">
+                    <br>
+                    <b><i> TUTORIJALI </i></b></div>
+                <div class="div7" style="background-color: blue; color: white; margin-top: 50px;">
+                    <br>
+                    <b><i> PROFESORI </i></b></div>
+                <div class="div8" style="background-color: blue; color: white; margin-top: 50px;">
+                    <br>
+                    <b><i> ASISTENTI </i></b></div>
+                <div class="div11" style="margin-top: 70px; margin-left: 20px;"><b> RAČUNARSKA PISMENOST </b></div>
+                <div class="div12" style="margin-top: 50px; margin-left: 20px;"> Na predavanjima se obrađuju temeljni koncepti iz računarstva i informatike. Lica se upoznaju sa različitim komponentama računara, različitim sistemima i njihovim međusobnim povezivanjem, kao i strategijama rješavanja problema. Pored prikaza temeljnih pojmova iz računarstva, predavanja uključuju veliki broj primjera savremenimh komponenti koji ilustriraju uvedene koncepte. Laboratorijske vježbe i domaće zadaće uključuju dodatne primjere i probleme koji su blisko povezani sa predavanjima, te na taj način doprinose razvoju kompetencija lica da razumije osnovne probleme savremenih računarskih sistema.</div>
+                <div class="div13" style="margin-top: 60px; margin-left: 20px;"> Trenutni tehnološki trendovi, Razumijevanje osnovnih računarskih komponenti, Korištenje interneta, Aplikativni softver, Sistemski softver, Razumijevanje i procjena hardvera, Osnovni koncepti umrežavanja računarskih sistema, Digitalne komponente i različiti načini zapisivanja podataka, Etika u računarstvu  </div>
+                <div class="div14" style="margin-top: 80px; margin-left: 20px;"> 40 </div>
+                <div class="div15" style="margin-top: 80px; margin-left: 20px;"> 20 </div>
+                <div class="div16" style="margin-top: 80px; margin-left: 20px;"> 0 </div>
+                <div class="div17" style="margin-top: 80px; margin-left: 20px;">
+                    <ul class="lista-profesora"> 
+                        <li> Doc. dr Akagić Amila dipl. el ing </li>
+                    </ul>
+                </div>
+                <div class="div18" style="margin-top: 80px; margin-left: 20px;">
+                    <ul class="lista-asistenata"> 
+                        <li> Edvin Teskeredžić, BoEE </li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+
+          <footer id="podnozje">
+              <div id="pdonz">
+                  <p id="prva"><i>Elektrotehnički fakultet, Sarajevo</i></p>
+                  <p id="druga"> <i> Razvoj softvera </i></p>
+                  <p id="treca"><i><a href="http://www.etf.unsa.ba/"> www.etf.unsa.ba </a></i></p>
+              </div>
+          </footer>
+    </body>
+</html>

@@ -1,0 +1,210 @@
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url("https://www.solidbackgrounds.com/images/950x350/950x350-white-solid-color-background.jpg");
+    background-repeat: repeat;
+    background-size: 90%;
+    width: auto;
+    display: grid;
+    grid-template-areas: "header header header" "nav article ads" "footer footer footer";
+    grid-template-rows: 80px 1fr 70px;
+    grid-template-columns: 25% 1fr 25%;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    height: 100vh;
+    margin: 0;
+}
+#zaglavlje {
+    grid-area: header;
+}
+
+#prvi-semestar {
+    color: rgb(28, 28, 236);
+}
+
+#drugi-semestar {
+    color: rgb(28, 28, 236);
+}
+
+#treci-semestar {
+    color: rgb(28, 28, 236);
+}
+
+#cetvrti-semestar {
+    color: rgb(28, 28, 236);
+}
+
+#podnozje {
+    grid-area: footer;
+}
+
+#slika {
+    grid-area: article;
+}
+
+#lista {
+    grid-area: nav;
+}
+
+#siteAds {
+    grid-area: ads;
+}
+
+#zaglavlje{
+    /*background-color: rgb(70, 70, 230);*/
+    background-color: rgb(28, 28, 236);
+}
+
+#zaglavlje img {
+    margin-left: 40px;
+    float: left;
+    width: 150%;
+    max-width: 180px;
+    height: auto;
+}
+
+#zaglavlje h1 {
+    margin: 35px;
+    text-align: left;
+    margin-right: 50px;
+    color: white;
+}
+
+.lista ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: white;
+    background-color: rgb(28, 28, 236);
+    list-style: none;
+}
+
+#pdonz {
+    display: inline-flex;
+}
+
+#prva {
+    margin-bottom: 30px;
+    margin-right: 100px;
+}
+
+#druga {
+    margin-right: 60px;
+}
+
+#treca {
+    margin-left: 80px;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    color: white;
+  }
+
+.lista ul li {
+    float: right;
+    padding: 10px;
+}
+.lista ul li a {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.lista ul li a:hover {
+    background-color: black;
+}
+#predmeti-prve-godine h4 {
+    padding: 90px;
+    text-align: right;
+    color:black;
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#predmeti-prve-godine ul {
+    padding: 10px;
+    float: right;
+    margin: 0; 
+    list-style: none;
+}
+#predmeti-prve-godine nav ul li p {
+    font-size: 17px;
+}
+#predmeti-prve-godine nav ul li::before {
+    content: "";
+    background: url('https://previews.123rf.com/images/nikolae/nikolae1403/nikolae140300030/27453737-book-icon-isolated-on-white-background.jpg') no-repeat left / contain;
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin: 2px 6px 0 0;
+}
+#predmeti-druge-godine h4 {
+    padding: 90px;
+    text-align: left;
+    color: black;
+    font-size: 20px;
+}
+
+#predmeti-druge-godine ul {
+    padding-left: 10px;
+    float: left;
+    margin: 0;
+    list-style: none;
+}
+
+#predmeti-druge-godine li {
+    color: black;
+}
+
+#predmeti-prve-godine li {
+    color: black;
+}
+
+#predmeti-druge-godine nav ul li p {
+    font-size: 17px;
+}
+#predmeti-druge-godine  ul li::before {
+    content: "";
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ-xOQ300flrfP37h4JW0aCC-dwnRXnyRwH72wEA7Hy2BlUaq-k') no-repeat left / contain;
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin: 2px 6px 0 0;
+}
+#slika img {
+    width: 95%;
+    height: auto;
+    margin-top: 120px;
+}
+
+#podnozje {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    background-color: rgb(28, 28, 236);
+}
+
+
+@media all and (max-width: 575px) {
+    body {
+        grid-template-areas: "header" "article" "ads" "nav" "footer";
+        grid-template-rows: 150px 1fr 1fr 1fr 70px;
+        grid-template-columns: 1fr;
+    }
+}

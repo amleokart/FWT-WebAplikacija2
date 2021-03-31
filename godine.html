@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <title> Zadatak 3 </title>
+        <link rel="stylesheet" type="text/css" href="godine.css" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><script src="pretraga.js"></script>
+        <script src="skripta.js"></script> 
+        <script src="godina.js"></script>
+    </head>
+
+    <body>
+        <header id="zaglavlje">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRswdKqhSN1EOOTIXDn4hy9N0YOiWnUuQcGfISUlaCL0upyQQ1Y" alt="slika"/>
+                <h1> RAZVOJ SOFTVERA </h1>            
+                <nav class="lista">
+                <ul>
+                    <li> <a href="/pocetna.html"> Početna </a></li>
+                    <li> <a href="/kontakt.html"> Kontakt </a></li>
+                    <li> <a href="/godine.html"> Godine </a></li>
+                    <li> <a href="/osoblje.html"> Osoblje </a></li>
+                    <li> <a href="/laboratorije.html"> Laboratorije </a></li>
+                    <li> <a href="/predmeti.html"> Predmeti </a></li>
+                </ul>
+            </nav>
+        </header>
+
+        
+        <div class="pretraga" style="padding: 15%; margin-top: 50%; ">
+          <input type="search" id="pretraga-predmet" onkeyup="pretragaPredmet()" placeholder="pretraga predmeta">
+          <br><br>
+          <input type="search" class="pretraga-nastavnik" onkeyup="pretragaNastavnik()" placeholder="pretraga nastavnika">
+          <br><br>
+          <input type="search" class="pretraga-godina" onkeyup="pretragaGodina(this.value)" placeholder="pretraga godina">
+        </div>
+
+        <div id="lijeva-tabela" style="padding: 15%; width: 100%;">
+          <table class="tg" style="width: 100%;">
+            <tr class="solid">
+              <th class="tg-haji" colspan="3" id="prvagodina">Prva godina</th>
+            </tr>
+            <tr class="solid">
+              <th class="tg-xums" style="width: 25%;">Naziv predmeta</th>
+              <th class="tg-xums">Opis</th>
+              <th class="tg-xums">Profesor</th>
+            </tr>
+
+            <tr class="profesorVO">
+              <td class="tg-lboi dotted1">Frontend web tehnologije</td>
+              <td class="tg-lboi dotted2">Stručni predmet</td>
+              <td onmouseover="vensadaprvagodina()" onmouseout="vensadadrugagodina()" class="tg-lboi dotted3"><b>Vensada Okanovic</b></td>
+            </tr>
+
+            <tr>
+              <td class="tg-0pky dotted">Uvod u baze podataka</td>
+              <td class="tg-c6of dotted">SQL</td>
+              <td class="tg-0pky dotted">Emir Buza</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky dotted">Računarska pismenost</td>
+              <td class="tg-0pky dotted">Stručni predmet</td>
+              <td class="tg-0pky dotted">Amila Akagić</td>
+            </tr>
+            <tr class="profesorVLJ">
+              <td class="tg-0pky dotted">Uvod u programiranje</td>
+              <td class="tg-0pky dotted">C</td>
+              <td onmouseover="vedranprvagodina()" onmouseout="vedrandrugagodina()" class="tg-0pky dotted">Vedran Ljubović</td>
+            </tr>
+            <tr class="profesorZJ">
+              <td class="tg-0pky dotted">Matematika u računarstvu 1</td>
+              <td class="tg-0pky dotted">Stručni predmet</td>
+              <td onmouseover="juricprvagodina()" onmouseout="juricdrugagodina()" class="tg-0pky dotted">Željko Jurić, Razija Turčinhodžić-Mulahasanović</td>
+            </tr>
+            <tr class="profesorVLJ">
+              <td class="tg-0pky dotted">Razvoj softvera</td>
+              <td class="tg-0pky dotted">Java</td>
+              <td onmouseover="vedranprvagodina()" onmouseout="vedrandrugagodina()" class="tg-0pky dotted">Vedran Ljubović</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky dotted">Vjerovatnoća i statistika</td>
+              <td class="tg-0pky dotted">Stručni predmet</td>
+              <td class="tg-0pky dotted">Amela Muratović-Ribić</td>
+            </tr>
+            <tr class="profesorSR">
+              <td class="tg-0pky dotted">Računarske arhitekture i mreže</td>
+              <td class="tg-0pky dotted">Stručni predmet</td>
+              <td onmouseover="ribicprvagodina()" onmouseout="ribicdrugagodina()" class="tg-0pky dotted">Samir Ribić</td>
+            </tr>
+            <tr class="profesorZJ">
+              <td class="tg-0pky dotted">Tehnike programiranja</td>
+              <td class="tg-0pky dotted">C++</td>
+              <td onmouseover="juricprvagodina()" onmouseout="juricdrugagodina()" class="tg-0pky dotted">Željko Jurić</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky dotted">Matematika u računarstvu 2</td>
+              <td class="tg-0pky dotted">Stručni predmet</td>
+              <td class="tg-0pky dotted">Fatih Destović</td>
+            </tr>
+            <tr class="solid">
+              <td class="tg-9u2q" colspan="3" id="drugagodina">Druga godina</td>
+            </tr>
+            <tr class="solid">
+              <td class="tg-266k">Naziv predmeta</td>
+              <td class="tg-266k">Opis</td>
+              <td class="tg-266k">Profesor</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky dotted">Interakcija čovjek-računar</td>
+              <td class="tg-0pky dotted">Stručni predmet</td>
+              <td class="tg-0pky dotted">Dušanka Bošković</td>
+            </tr>
+
+            <tr class="profesorVO">
+              <td class="tg-0pky dotted">Web tehnologije</td>
+              <td class="tg-0pky dotted">Strucni predmet</td>
+              <td onmouseover="vensadaprvagodina()" onmouseout="vensadadrugagodina()" class="tg-0pky dotted"><b>Vensada Okanovic</b></td>
+            </tr>
+
+            <tr class="profesorSR">
+              <td class="tg-0pky dotted">Programski jezici i prevodioci</td>
+              <td class="tg-0pky dotted">Stručni predmet</td>
+              <td onmouseover="ribicprvagodina()" onmouseout="ribicdrugagodina()" class="tg-0pky dotted">Samir Ribić</td>
+            </tr> 
+
+            <tr>
+              <td class="tg-0pky dotted">Verifikacija i validacija softvera</td>
+              <td class="tg-0pky dotted">Stručni predmet</td>
+              <td class="tg-0pky dotted">Dženana Đonko</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky dotted">Algoritmi i strukture podataka</td>
+              <td class="tg-0pky dotted">Stručni predmet</td>
+              <td class="tg-0pky dotted">Haris Šupić</td>
+            </tr>
+            <tr class="profesorVLJ">
+              <td class="tg-0pky dotted">Napredni razvoj softvera</td>
+              <td class="tg-0pky dotted">Stručni predmet</td>
+              <td onmouseover="vedranprvagodina()" onmouseout="vedrandrugagodina()" class="tg-0pky dotted">Vedran Ljubović</td>
+            </tr>
+
+            <tr class="profesorVO">
+              <td class="tg-0pky dotted">Razvoj mobilnih aplikacija</td>
+              <td class="tg-0pky dotted">Stručni predmet</td>
+              <td onmouseover="vensadaprvagodina()" onmouseout="vensadadrugagodina()" class="tg-0pky dotted">Vensada Okanović</td>
+            </tr>
+
+            <tr>
+              <td class="tg-0lax dotted">Osnove informacionih sistema</td>
+              <td class="tg-0lax dotted">Strčni predmet</td>
+              <td class="tg-0lax dotted">Anel Tanović</td>
+            </tr>
+            <tr>
+              <td class="tg-0lax dotted">Skladišta podataka</td>
+              <td class="tg-0lax dotted">Stručni predmet</td>
+              <td class="tg-0lax dotted">Ingmar Bešić</td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="desna-tabela" style="padding: 10%; width: 70%; float: right; margin-right: 80%; ">
+          <table class="tg" style="float: right; margin-left: 70%;">
+            <tr>
+              <th class="tg-haji without-bottom" colspan="6">Prva godina</th>
+            </tr>
+            <tr>
+              <td class="tg-xums without-top"></td>
+              <td class="tg-xums dotted-top">PON</td>
+              <td class="tg-xums dotted-top">UTO</td>
+              <td class="tg-266k dotted-top">SRI</td>
+              <td class="tg-266k dotted-top">ČET</td>
+              <td class="tg-266k dotted-top">PET</td>
+            </tr>
+            <tr>
+              <td class="tg-lboi">09:00</td>
+              <td class="tg-rgo1">Uvod u programiranje</td>
+              <td class="tg-jdhy">Matematika u računarstvu 1</td>
+              <td class="tg-7od5">Osnove baza podataka</td>
+              <td class="tg-pidv">Frontend Web tehnologije</td>
+              <td class="tg-0pky"></td>
+            </tr>
+            <tr>
+              <td class="tg-lboi">09:30</td>
+              <td class="tg-yhg3">Uvod u programiranje</td>
+              <td class="tg-jdhy">Matematika u računarstvu 1</td>
+              <td class="tg-7od5">Osnove baza podataka</td>
+              <td class="tg-pidv">Frontend Web tehnologije</td>
+              <td class="tg-y698">
+                Uvod u programiranje<br />Računarska pismenost
+              </td>
+            </tr>
+            <tr>
+              <td class="tg-lboi">10:00</td>
+              <td class="tg-yhg3">Uvod u programiranje</td>
+              <td class="tg-jdhy">Matematika u računarstvu 1</td>
+              <td class="tg-7od5">Osnove baza podataka</td>
+              <td class="tg-46ru">Matematika u računarstvu</td>
+              <td class="tg-7od5">Frontend Web tehnologije</td>
+            </tr>
+            <tr>
+              <td class="tg-lboi">10:30</td>
+              <td class="tg-p170">
+                Frontend web tehnologije<br />Uvod u programiranje
+              </td>
+              <td class="tg-p170">
+                Matematika u računarstvu 1<br />Osnove baza podataka<br />
+              </td>
+              <td class="tg-pidv">Osnove baza podataka</td>
+              <td class="tg-46ru">Matematika u računarstvu</td>
+              <td class="tg-7od5">Frontend Web tehnologije</td>
+            </tr>
+            <tr>
+              <td class="tg-lboi">11:00</td>
+              <td class="tg-p170">
+                Frontend Web tehnologije<br />Uvod u programiranje
+              </td>
+              <td class="tg-p170">
+                Matematika u računarstvu 1<br />Osnove baza podataka
+              </td>
+              <td class="tg-pidv">Osnove baza podataka</td>
+              <td class="tg-46ru">Matematika u računarstvu</td>
+              <td class="tg-7od5">Frontend Web tehnologije</td>
+            </tr>
+            <tr>
+              <td class="tg-haji without-bottom" colspan="6">Druga godina</td>
+            </tr>
+            <tr>
+              <td class="tg-xums without-top"></td>
+              <td class="tg-xums dotted-top">PON</td>
+              <td class="tg-xums dotted-top">UTO</td>
+              <td class="tg-266k dotted-top">SRI</td>
+              <td class="tg-266k dotted-top">ČET</td>
+              <td class="tg-266k dotted-top">PET</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">09:00</td>
+              <td class="tg-46ru">Programski jezici i prevodioci</td>
+              <td class="tg-pidv">Programski jezici i prevodioci</td>
+              <td class="tg-y698">Skladišta podataka<br />Web tehnologije</td>
+              <td class="tg-0pky"></td>
+              <td class="tg-0pky"></td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">09:30</td>
+              <td class="tg-46ru">Programski jezici i prevodioci</td>
+              <td class="tg-pidv">Programski jezici i prevodioci</td>
+              <td class="tg-pidv">Napredni razvoj softvera</td>
+              <td class="tg-0pky"></td>
+              <td class="tg-0pky"></td>
+            </tr>
+            <tr>
+              <td class="tg-lboi">10:00</td>
+              <td class="tg-jdhy">Algoritmi i strukture podataka</td>
+              <td class="tg-yhg3">Programski jezici i prevodioci</td>
+              <td class="tg-pidv">Napredni razvoj softvera<br /></td>
+              <td class="tg-7od5">Interakcija čovjek-računar</td>
+              <td class="tg-0pky"></td>
+            </tr>
+            <tr>
+              <td class="tg-lboi">10:30</td>
+              <td class="tg-jdhy">Algoritmi i strukture podataka</td>
+              <td class="tg-p170">Skladišta podataka<br />Web tehnologije</td>
+              <td class="tg-y698">Skladišta podataka<br />Web tehnologije</td>
+              <td class="tg-7od5">Interakcija čovjek-računar</td>
+              <td class="tg-7od5">Napredni razvoj softvera</td>
+            </tr>
+            <tr>
+              <td class="tg-lboi">11:00</td>
+              <td class="tg-jdhy">Algoritmi i strukture podataka</td>
+              <td class="tg-p170">Skladišta podataka<br />Web tehnologije</td>
+              <td class="tg-y698">Skladišta podataka<br />Web tehnologije</td>
+              <td class="tg-7od5">Interakcija čovjek-računar</td>
+              <td class="tg-7od5">Napredni razvoj softvera</td>
+            </tr>
+          </table>
+        </div>
+    
+
+          <footer id="podnozje">
+              <div id="pdonz">
+                  <p id="prva"><i>Elektrotehnički fakultet, Sarajevo</i></p>
+                  <p id="druga"> <i> Razvoj softvera </i></p>
+                  <p id="treca"><i><a href="http://www.etf.unsa.ba/"> www.etf.unsa.ba </a></i></p>
+              </div>
+          </footer>
+    </body>
+</html>
