@@ -1,5 +1,3 @@
-# FWT-WebAplikacija2
+# FacultyWebsite
 
-Web aplikacija za stranicu fakulteta
-
-Kreirano u svrhu predmeta Frontend web tehnologije
+Web application for a faculty page with specific functionalities

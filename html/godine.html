@@ -2,16 +2,14 @@
 <html lang="hr">
     <head>
         <title> Zadatak 3 </title>
-        <link rel="stylesheet" type="text/css" href="godine.css" />
+        <link rel="stylesheet" type="text/css" href="/css/godine.css" />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script src="skripta.js"></script> 
-        <script src="pretraga.js"></script>
-        <script src="pretragaTestovi.js"></script>
-        <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><script src="pretraga.js"></script>
+        <script src="/js/skripta.js"></script> 
+        <script src="/js/godina.js"></script>
     </head>
 
     <body>
@@ -20,45 +18,34 @@
                 <h1> RAZVOJ SOFTVERA </h1>            
                 <nav class="lista">
                 <ul>
-                    <li> <a href="/pocetna.html"> Početna </a></li>
-                    <li> <a href="/kontakt.html"> Kontakt </a></li>
-                    <li> <a href="/godine.html"> Godine </a></li>
-                    <li> <a href="/osoblje.html"> Osoblje </a></li>
-                    <li> <a href="/laboratorije.html"> Laboratorije </a></li>
-                    <li> <a href="/predmeti.html"> Predmeti </a></li>
+                  <li> <a href="/html/pocetna.html"> Početna </a></li>
+                  <li> <a href="/html/kontakt.html"> Kontakt </a></li>
+                  <li> <a href="/html/godine.html"> Godine </a></li>
+                  <li> <a href="/html/osoblje.html"> Osoblje </a></li>
+                  <li> <a href="/html/laboratorije.html"> Laboratorije </a></li>
+                  <li> <a href="/html/predmeti.html"> Predmeti </a></li
                 </ul>
             </nav>
         </header>
 
-        <script src="https://unpkg.com/chai/chai.js"></script>
-        <script src="https://unpkg.com/mocha/mocha.js"></script>
-      
-        <script class="mocha-init">
-          mocha.setup('bdd');
-          mocha.checkLeaks();
-        </script>
-        <script src="pretragaTestovi.js></script>
-        <script class="mocha-exec">
-          mocha.run();
-        </script>
-
+        
         <div class="pretraga" style="padding: 15%; margin-top: 50%; ">
           <input type="search" id="pretraga-predmet" onkeyup="pretragaPredmet()" placeholder="pretraga predmeta">
           <br><br>
           <input type="search" class="pretraga-nastavnik" onkeyup="pretragaNastavnik()" placeholder="pretraga nastavnika">
           <br><br>
-          <input type="search" class="pretraga-godina" onkeyup="pretragaGodina()" placeholder="pretraga godina">
+          <input type="search" class="pretraga-godina" onkeyup="pretragaGodina(this.value)" placeholder="pretraga godina">
         </div>
 
         <div id="lijeva-tabela" style="padding: 15%; width: 100%;">
           <table class="tg" style="width: 100%;">
             <tr class="solid">
-              <th class="tg-haji" colspan="3" id=>Prva godina</th>
+              <th class="tg-haji" colspan="3" id="prvagodina">Prva godina</th>
             </tr>
             <tr class="solid">
               <th class="tg-xums" style="width: 25%;">Naziv predmeta</th>
               <th class="tg-xums">Opis</th>
-              <th class="tg-xums" id="kolonanastavnik" style="width: 40%;">Profesor</th>
+              <th class="tg-xums">Profesor</th>
             </tr>
 
             <tr class="profesorVO">
